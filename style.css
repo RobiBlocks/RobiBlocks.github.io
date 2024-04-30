@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 71%);
+    margin: 0px;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+#team{
+    
+}
+#titleTTS3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#titleSpieltagVideo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+header{
+    background-color: cadetblue;
+    padding: 10px;
+}
+aside{
+    width: 20%;
+    height: 450px;
+    float: left;
+    background-color: chocolate;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    height: 450px;
+    float: left;
+    background-color: burlywood;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    height: 450px;
+    float: left;
+    background-color: rgb(0, 145, 97);
+    padding: 10px;
+}
+footer{
+    clear: both;
+    background-color: blueviolet;
+    padding: 10px;
+}
+@media screen and (max-width: 780px){
+    aside, section, article{
+        width: 100%;
+    }
+}
