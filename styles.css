@@ -1,0 +1,9 @@
+section{
+    display: flex;
+}
+#projects {
+    background-color: blue;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
