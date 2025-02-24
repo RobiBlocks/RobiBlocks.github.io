@@ -1,11 +1,41 @@
+*{
+    --borderradius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
 section{
     display: flex;
     flex-direction: column;
 }
+.image{
+    border-radius: var(--borderradius);
+}
+h2{
+    background-color: rgb(85, 212, 255);
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: var(--borderradius);
+}
+a{
+    text-decoration: none;
+}
 .projects{
-    background-color: blue;
-    margin: 5px;
+    background-color: rgb(33, 37, 255);
     padding: 10px;
+}
+#project1{
+    border-top-left-radius: var(--borderradius);
+    border-bottom-left-radius: var(--borderradius);
+}
+#project3{
+    border-top-right-radius: var(--borderradius);
+    border-bottom-right-radius: var(--borderradius);
 }
 #projects {
     display: flex;
