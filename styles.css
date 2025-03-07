@@ -12,6 +12,7 @@
 body {
   background-color: var(--blackColor);
   display: grid;
+  margin: 20px;
 }
 nav {
   background-color: var(--middleColor);
@@ -40,7 +41,7 @@ section {
   display: flex;
   flex-direction: column;
 }
-.image {
+img {
   border-radius: var(--borderradius);
 }
 h1,
@@ -66,6 +67,11 @@ h3 {
   border-radius: var(--borderradius);
   padding: 15px;
 }
+p {
+  color: black;
+  margin: 20px;
+  padding: 10px;
+}
 #projects h3 {
   padding: 0px;
 }
@@ -89,6 +95,14 @@ a {
   background-color: var(--whiteColor);
   color: black;
 }
+.projectsBig {
+  background-color: var(--whiteColor);
+  margin-top: 20px;
+  border-radius: var(--borderradius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #project1 {
   border-top-left-radius: var(--borderradius);
   border-bottom-left-radius: var(--borderradius);
@@ -102,6 +116,32 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+.skills{
+  background-color: white;
+  border-radius: var(--borderradius);
+  padding: 15px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.skills img{
+  border-radius: 0px;
+}
+#csharp{
+  background-color: rgb(210, 125, 250);
+}
+#css{
+  background-color: rgb(120, 175, 255);
+  padding: 3px;
+}
+#javascript{
+  background-color: rgb(251, 255, 134);
+  padding: 3px;
+}
+
+::selection { background: var(--blackColor); color: #fff; }
+li::selection { background: var(--whiteColor); color: #fff; }
+i::selection { background: var(--whiteColor); color: #fff; }
 
 @media (min-width: 800px) {
   body {
@@ -110,7 +150,17 @@ a {
   }
   header,
   nav,
-  section {
+  article,
+  section,
+  .projectsBig {
     grid-column: 2;
+  }
+  .projectsBig img{
+    width: 70%;
+  }
+  #skillsPortfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
