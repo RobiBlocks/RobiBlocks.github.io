@@ -11,12 +11,20 @@
       <h1>Robin Müller</h1>
     </header>
 
+    <div class="imgdiv">
+      <img src="pictures/Rheinfall.jpeg" alt="" />
+    </div>
+
+    <div id="socialMedia">
+      <a href="https://github.com/RobiBlocks"><img id="github" src="pictures/github-mark.png" alt=""/></a>
+      <a href="https://www.linkedin.com/in/robin-m%C3%BCller-696782353"><img id="linkedin" src="pictures/inBug-Black.png" alt=""/></a>
+      <a href="https://www.instagram.com/robin_zekarollers_36"><img id="instagram" src="pictures/instagram_Glyph_Black.png" alt=""/></a>
+    </div>
+
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="skills portfolio.html">Skills</a></li>
+        <a href="index.html"><li>Home</li></a>
+        <a href="projects.html"><li>Projects</li></a>
       </ul>
     </nav>
 
@@ -29,7 +37,7 @@
       <div id="projects">
         <a href="https://github.com/RobiBlocks/Blue-Dragon" target="_blank">
           <div id="project1" class="projects">
-            <h3>Blue Dragon</h3>
+            <h3 class="projectName">Blue Dragon</h3>
             <img
               class="image"
               src="pictures/placeholder.jpg"
@@ -40,7 +48,7 @@
         </a>
         <a href="https://github.com/RobiBlocks/Snake" target="_blank">
           <div id="project2" class="projects">
-            <h3>Snake</h3>
+            <h3 class="projectName">Snake</h3>
             <img
               class="image"
               src="pictures/placeholder.jpg"
@@ -51,7 +59,7 @@
         </a>
         <a href="https://github.com/RobiBlocks/Hangman" target="_blank">
           <div id="project3" class="projects">
-            <h3>Hangman</h3>
+            <h3 class="projectName">Hangman</h3>
             <img
               class="image"
               src="pictures/placeholder.jpg"
@@ -64,41 +72,58 @@
 
       <div>
         <h2>Curriculum Vitae</h2>
-        <ul>
-          <li>2023 - 2027: Informatikmittelsschule Baden</li>
-          <li>2020 - 2023: Bezirksschule</li>
-          <li>2014 - 2020: Primarschule</li>
-        </ul>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - Heute</div>
+            <div class="timeline-content">Informatikmittelsschule Baden</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2023</div>
+            <div class="timeline-content">Bezirksschule</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014 - 2020</div>
+            <div class="timeline-content">Primarschule</div>
+          </div>
+        </div>
       </div>
 
       <div>
         <h2>Skills Portfolio</h2>
         <h3>Programming Languages</h3>
-        <div id="skillsPortfolio">
+        <div class="skillsPortfolio">
           <div id="csharp" class="skills">
-            <img src="pictures/logo_csharp.png" alt="" width="20%" />
+            <img src="pictures/logo_csharp.svg" alt="" />
           </div>
           <div id="html" class="skills">
-            <img src="pictures/logo_html.webp" alt="" width="20%" />
+            <img src="pictures/logo_html.svg" alt="" />
           </div>
           <div id="css" class="skills">
-            <img src="pictures/logo_css.png" alt="" width="28%" />
+            <img src="pictures/logo_css.svg" alt="" />
           </div>
           <div id="javascript" class="skills">
-            <img src="pictures/logo_javascript.png" alt="" width="28%" />
+            <img src="pictures/logo_javascript.png" alt="" />
           </div>
         </div>
         <h3>Languages</h3>
-        <ul>
-          <li>German</li>
-          <li>English</li>
-          <li>French</li>
-        </ul>
+        <div class="skillsPortfolio">
+          <div id="german" class="flags">
+            <img src="pictures/german.svg" alt="" />
+          </div>
+          <div id="english" class="flags">
+            <img src="pictures/english.svg" alt="" />
+          </div>
+          <div id="french" class="flags">
+            <img src="pictures/french.svg" alt="" />
+          </div>
+        </div>
         <h3>Hobbys</h3>
         <ul>
           <li>
             Powerchairhockey at the zeka-Rollers:
-            <a href="https://www.zeka-rollers.ch/blog/vizemeister-in-der-nlb">Interssanter Beitrag</a>
+            <a href="https://www.zeka-rollers.ch/blog/vizemeister-in-der-nlb"
+              >Interssanter Beitrag</a
+            >
           </li>
           <li>Star Wars Unlimited</li>
         </ul>
