@@ -20,7 +20,6 @@ header {
   top: 0px;
   z-index: 1;
 }
-
 #socialMedia {
   background-color: var(--lightColor);
   display: flex;
@@ -28,9 +27,6 @@ header {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  position: sticky;
-  top: 100px;
-  z-index: 1;
 }
 #socialMedia img {
   height: 40px;
@@ -42,7 +38,7 @@ nav {
   font-size: 15px;
   font-weight: bold;
   position: sticky;
-  top: 170px;
+  top: 100px;
   z-index: 1;
 }
 nav ul {
@@ -57,6 +53,7 @@ nav li {
 }
 nav li:hover {
   background-color: var(--lightColor);
+  text-decoration: underline;
 }
 nav li:hover a {
   color: black;
@@ -123,22 +120,41 @@ a {
 }
 .projects:hover {
   background-color: var(--lightColor);
+  transition: 1s;
 }
 .projects:hover h3 {
   background-color: var(--lightColor);
   color: black;
-}
-.projectsBig {
-  background-color: var(--whiteColor);
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-decoration: underline;
+  transition: 1s;
 }
 #projects {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.projectsBig {
+  background-color: var(--whiteColor);
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectsBig img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.projectsBig:hover {
+  background-color: var(--middleColor);
+  transition: 1s;
+}
+.projectsBig:hover h2 {
+  background-color: var(--middleColor);
+  color: aliceblue;
+  text-decoration: underline;
+  transition: 1s;
 }
 
 .skillsPortfolio {
@@ -154,6 +170,10 @@ a {
   display: flex;
   justify-content: center;
 }
+.skills:hover {
+  background-color: var(--middleColor);
+  transition: 0.75s;
+}
 .skills img {
   height: 80px;
   aspect-ratio: 1 / 1;
@@ -167,18 +187,14 @@ a {
   display: flex;
   justify-content: center;
 }
+.flags:hover {
+  background-color: var(--middleColor);
+  transition: 0.75s;
+}
 .flags img {
   height: 100px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-}
-#javascript {
-  grid-column: 1;
-  grid-row: 4;
-}
-#french {
-  grid-column: 1;
-  grid-row: 3;
 }
 
 .timeline {
@@ -210,6 +226,19 @@ a {
   border-radius: 50%;
 }
 
+footer {
+  background-color: var(--whiteColor);
+  color: aliceblue;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+footer p {
+  font-size: 17px;
+  margin: 10px;
+}
+
 ::selection {
   background: var(--blackColor);
   color: #fff;
@@ -232,13 +261,13 @@ h3::selection {
     border-radius: var(--borderradius);
   }
   body {
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: 25% auto auto 25%;
     grid-template-rows: auto;
+    column-gap: 20px;
   }
   header,
   nav {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1 / 5;
   }
   article,
   section,
@@ -246,13 +275,32 @@ h3::selection {
     grid-column: 2;
   }
   .imgdiv {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1 / 5;
   }
 
-  .projectsBig img {
-    width: 70%;
+  #projectsBig {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 50px;
   }
+  .projectsBig {
+    border-radius: var(--borderradius);
+  }
+  .projectsBig img {
+    width: 100%;
+  }
+  #projectBig1 {
+    grid-column: 1;
+  }
+  #projectBig3 {
+    grid-column: 1;
+  }
+  #projectBig5 {
+    grid-column: 1;
+  }
+
   #project1 {
     border-top-left-radius: var(--borderradius);
     border-bottom-left-radius: var(--borderradius);
@@ -270,21 +318,28 @@ h3::selection {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 150px;
   }
-  #javascript {
+  #sql {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
   }
   #english {
     grid-column: 2;
     grid-row: 1;
   }
-  #french {
-    grid-column: 1;
-    grid-row: 2;
+  #swu {
+    grid-column: 2;
+    grid-row: 1;
   }
 
   #socialMedia {
-    grid-column: 1 / span 3;
-    grid-row: 4;
+    background-color: var(--whiteColor);
+    position: fixed;
+    top: 13px;
+    right: 0px;
+    z-index: 1;
+  }
+  footer {
+    grid-column: 1 / 5;
+    grid-row: 6;
   }
 }
