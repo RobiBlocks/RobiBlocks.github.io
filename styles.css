@@ -283,10 +283,11 @@ h3::selection {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    grid-gap: 50px;
+    column-gap: 50px;
   }
   .projectsBig {
     border-radius: var(--borderradius);
+    margin-top: 50px;
   }
   .projectsBig img {
     width: 100%;
@@ -299,6 +300,14 @@ h3::selection {
   }
   #projectBig5 {
     grid-column: 1;
+  }
+  #projectBig1,
+  #projectBig2 {
+    margin-top: 60px;
+  }
+  #projectBig5,
+  #projectBig6 {
+    margin-bottom: 60px;
   }
 
   #project1 {
